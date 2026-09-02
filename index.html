@@ -27,4 +27,5 @@
 <script>
 const form=document.querySelector('#search-form');form.addEventListener('submit',e=>{e.preventDefault();const q=document.querySelector('#query').value.trim().replace(/[<>]/g,'');if(!q)return;document.querySelector('#company-name').textContent=q;document.querySelector('#summary').innerHTML='This is a <strong>search starting point</strong> for the requested company. Confirm the exact company number before relying on any attached evidence.';document.querySelector('#answer-title').textContent='Your evidence starting point';document.querySelector('#answer').scrollIntoView({behavior:'smooth',block:'start'});});
 </script>
+<script src="analytics-consent.js" defer></script>
 </body></html>
